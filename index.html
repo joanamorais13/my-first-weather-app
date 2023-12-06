@@ -14,47 +14,50 @@
     <title>My weather application</title>
   </head>
   <body>
-    <head>
-      <form class="search-form" id="search-form">
-        <input
-          type="search"
-          class="search-form-input"
-          id="search-form-input"
-          placeholder="Enter a city..."
-          required
-        />
-        <input
-          type="submit"
-          class="search-form-button"
-          id="search-form-button"
-        />
-      </form>
-    </head>
-    <main>
-      <div class="weather-app-data">
-        <div>
-          <h1 class="weather-app-city">Porto</h1>
-          <p class="weather-app-details">
-            <span id="time">Wednesday 11:28</span>,
-            <span id="description">clear sky</span> <br />
-            Humidity: <span id="humidity">83%</span>, Wind:
-            <span id="wind">1.54km/h</span>
-          </p>
+    <div class="weather-app">
+      <head>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            class="search-form-input"
+            id="search-form-input"
+            placeholder="Enter a city..."
+            required
+          />
+          <input
+            type="submit"
+            class="search-form-button"
+            id="search-form-button"
+          />
+        </form>
+      </head>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Porto</h1>
+            <p class="weather-app-details">
+              <span id="time">Wednesday 11:28</span>,
+              <span id="description">clear sky</span> <br />
+              Humidity: <span id="humidity"><strong>83%</strong></span
+              >, Wind:
+              <span id="wind"><strong>1.54km/h</strong></span>
+            </p>
+          </div>
+          <div class="weather-app-current-temperature">
+            <div class="icon" id="icon">⛅️</div>
+            <div class="current-temperature" id="current-temperature">10</div>
+            <div class="unit" id="unit">ºC</div>
+          </div>
         </div>
-        <div class="weather-app-current-temperature">
-          <div class="icon" id="icon">⛅️</div>
-          <div class="current-temperature" id="current-temperature">10</div>
-          <div class="unit" id="unit">ºC</div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      This project was coded by
-      <a href="" target="_blank"> Joana Morais</a>, is
-      <a href="" target="_blank">open-sourced on GitHub</a>
-      and
-      <a href="" target="_blank">hosted on Netlify</a>
-    </footer>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="" target="_blank"> Joana Morais</a>, is
+        <a href="" target="_blank">open-sourced on GitHub</a>
+        and
+        <a href="" target="_blank">hosted on Netlify</a>
+      </footer>
+    </div>
   </body>
   <script src="src/script.js"></script>
 </html>
