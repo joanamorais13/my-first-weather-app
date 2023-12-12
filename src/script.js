@@ -18,7 +18,7 @@ function refreshWeather(response){
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
   timeElement.innerHTML = formatDate(date);
-  iconElement.innerHMTL = `<img src="${response.data.condition.icon_url}"/>`
+  iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon" />`;
 }
 
   function formatDate(date){
