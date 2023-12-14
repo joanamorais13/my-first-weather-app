@@ -116,9 +116,10 @@ font-size: 25px;
 
 .weather-forecast{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
    color:  rgba(0, 0, 0, 0.6);
-
+   display: flex;
+   justify-content: space-around;
 }
 
 .weather-forecast-day{
@@ -129,6 +130,9 @@ font-size: 25px;
 
 .weather-forecast-temperature{
 font-size: 16px;
+display: flex;
+justify-content: space-evenly;
+
 }
 
 .weather-forecast-temperature-max {

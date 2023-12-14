@@ -1,3 +1,8 @@
+
+
+
+
+
 function capitalize(value) {
     return value.charAt(0).toUpperCase() + value.slice(1);
 }
@@ -52,8 +57,36 @@ let searchInput = document.querySelector("#search-form-input");
 searchCity(searchInput.value)
 }
 
+function displayForecast(){
+   
+
+let days = ["Tue","Wed","Thu","Fri","Sat"];
+let forecastHtml = "";
+
+days.forEach(function(day) {
+    forecastHtml = forecastHtml + `
+          
+            <div class="col-2">
+              <div class="weather-forecast-day">${day}</div>
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+              />
+              <div class="weather-forecast-temperature">
+                <span class="weather-forecast-temperature-max">18º </span>
+                <span class="weather-forecast-temperature-min">12º </span>
+              
+            </div>
+            </div>
+        `;
+});
+let forecastElement = document.querySelector ("#weather-forecast");
+forecastElement.innerHTML = forecastHtml;
+}
+
+
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Porto");
+displayForecast();
