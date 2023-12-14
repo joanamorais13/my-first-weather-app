@@ -143,3 +143,10 @@ justify-content: space-evenly;
    color:rgba(0, 0, 0, 0.3)
    
 }
+.weather-forecast-icon{
+    width: 65px;
+    height: 66px;
+    display:block;
+    margin: 10px;
+
+}
